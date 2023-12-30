@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="email-obtain success-section">
+      <div class="success container">
+        <div class="success__image">
+          <img class="success__icon" src="./assets/images/icon-success.svg" alt="success-icon">
+        </div>
+        <h1 class="success__title">Thanks for subscribing!</h1>
+        <p class="success__message">
+          A confirmation email has been sent to <span class="success__user-email">ash@loremcompany.com</span>. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <div class="success__btn-container"><button class="gradient-button" id="dismiss-button">Dismiss message</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Manuel Rojas</a>.
+    </div>
+  </footer>
+  <script>
+    const dismiss = document.getElementById("dismiss-button");
+    dismiss.addEventListener("click", () => {
+      console.log("clicked");
+      window.location.href = "./index.html"
+    })
+  </script>
+</body>
+
+</html>

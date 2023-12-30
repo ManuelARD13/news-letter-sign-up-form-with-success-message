@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="email-obtain">
+      <div class="suscribe container">
+        <div class="suscribe__text">
+          <h1 class="suscribe__title">
+            Stay updated!
+          </h1>
+          <p>
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="suscribe__services-list">
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="checkmark-icon">
+              <p> Product discovery and building what matters</p>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="checkmark-icon">
+              <p> Measuring to ensure updates are a success</p>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="checkmark-icon">
+              <p> And much more!</p>
+            </li>
+          </ul>
+          <form action="" class="suscribe__form">
+            <div class="suscribe__labels-container">
+              <p class="error-message hidden">Valid email required</p>
+              <label class="suscribe__input-label" for="email">Email address</label>
+            </div>
+            <input class="suscribe__input" type="email" name="email" id="email-input" placeholder="email@company.com"
+               />
+            <input type="submit" value="Suscribe to monthly newsletter" class="gradient-button" id="suscribe-button" />
+          </form>
+        </div>
+        <div class="suscribe__image">
+          <img class="suscribe__desktop-image" src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="sign-up-image">
+        </div>
+        <img class="suscribe__mobile-image" src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up-image">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Manuel Rojas</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
